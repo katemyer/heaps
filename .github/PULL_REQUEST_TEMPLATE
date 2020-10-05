@@ -6,9 +6,9 @@ Congratulations! You're submitting your assignment!
 
 Question | Answer
 :------------- | :-------------
-How is a Heap different from a Binary Search Tree? | 
-Could you build a heap with linked nodes? | 
-Why is adding a node to a heap an O(log n) operation? |
-Were the `heap_up` & `heap_down` methods useful?  Why? |
+How is a Heap different from a Binary Search Tree? | Heaps guarantee that the elements on higher levels are greater for max heaps or lower for min heaps. But, the BST guarantees that there is order from left to right, this is useful for searching elements that are sorted. |
+Could you build a heap with linked nodes? | No because heaps are binary trees. You can store the heap into an array since it's easier to manage memory. |
+Why is adding a node to a heap an O(log n) operation? | Because the smallest possible height for a heap with N nodes is o log n. |
+Were the `heap_up` & `heap_down` methods useful?  Why? | Heap up methods are useful in adding elements to a heap, by comparing the new node to its parent and swapping them if they are out of order, and updating a lcoation. The heap down is useful to remove an element by swapping the last leaf with the root and done until there are more swaps left. |
 
 
