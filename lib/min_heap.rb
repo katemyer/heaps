@@ -17,7 +17,9 @@ class MinHeap
   # Time Complexity: ? O(logn)
   # Space Complexity: ? O(1)
   def add(key, value = key)
+    #pushing key value of node into the store array
     @store << HeapNode.new(key, value)
+    # add
     heap_up(@store.length - 1)
   end
 
@@ -26,9 +28,13 @@ class MinHeap
   # Time Complexity: O(logn)
   # Space Complexity: O(1)
   def remove()
+    #set root to first element of the store array
     root = @store[0] 
+    #swpap
     swap(0, @store.length - 1)
+    # take it out
     @store.pop()
+    #eventually remove 
     heap_down(0)
     return root.value
   end
